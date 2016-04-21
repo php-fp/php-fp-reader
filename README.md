@@ -155,7 +155,7 @@ assert($reader->run(null) == 7);
 
 The method for forking the Reader monad. The type signature of this is interesting: essentially, a Reader is defined by a type, `a`, that depends on a type, `b`, which is also a good description of a function `b -> a`. Reader is, in many ways, just elaborate and flexible function composition, which is why it gets called the 'arrow monad' (feel free to Google this!):
 
-```
+```php
 <?php
 
 use PhpFp\Reader\Reader;
